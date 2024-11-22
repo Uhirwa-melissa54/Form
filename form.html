@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+      .field{
+      padding-left:30px ;
+      padding-bottom: 30px;
+      padding-top: 30px;
+      font-size: 20px;
+      } 
+      body{
+        background-image: url(bACK.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      legend{
+        font-size: 30px;
+        margin-left: auto; 
+      } 
+      h1{
+        margin-left: 50px;
+      }
+    </style>
+</head>
+<body>
+    <h1 class="h1">Entrance form in Rwanda Coding Academy Competitions </h1>
+    <form action="form.php" method="post" oninput="x.value=parseInt(a.value)+parseInt(b.value)" novalidate>
+        <fieldset class="field">
+            <legend class="legend" font-size="30px"><b><i><u>Personal information</u></i></b></legend>
+        <label for="fname"><b>First name</b></label>
+        <input type="text" name="fname" placeholder="Enter you first name"><br><br>
+        <label for="lname" ><b>last name</b></label>
+        <input type="text" name="lname" placeholder="Enter you Last name"><br><br>
+        <b>Gender:</b><br>
+        <input type="radio" name="gender" value="Male">
+        <label for="male">Male</label><br>
+        <input type="radio" name="gender" value="Female">
+        <label for="male">Female</label><br><br>
+        <label for="email"><b>Gmail</b></label>
+        <input type="email" name="mail" placeholder="name@gmail.com"><br><br>
+        <b> Enter your phone number:</b><br>
+        <input type="tel" name="tel"><br>
+        <label for="date"><b>Date of birth:</b></label><br>
+        <input type="date" name="date" >
+    </fieldset>
+    <fieldset class="field">
+        <legend class="legend" font-size="30px"><b><i><u>Educational background</u></i></b></legend>
+        <b>Choose your combination</b><br>
+         <select name=" college"><br>
+        <option  value="MEC" selected>MEC </option>
+        <option  value="MPC">MPC</option>
+        <option value="SOD">Software development</option>
+        <option value="SPE">SPE</option>
+    </select><br><br>
+        <b> Choose your school</b><br>
+        <select name=" combination">
+            <option   value="Rwanda Coding Academy" selected>Rwanda Coding Academy</option>
+            <option name=" comb" value="Gashora girls academy">Gashora girls academy</option>
+            <option  name=" comb"value="England college">England college</option>
+            <option name=" comb" value="Ecole Notre Damme de la providence karubanda">Ecole Notre Damme de la providence karubanda</option>
+        </select><br><br>
+        <b>what is your grade</b><br>
+        <select name=" grade">>
+            <option name=" comb" value="10">10<sup>th</sup></option>
+            <option  name=" comb"value="11">11<sup>th</option>
+            <option name=" comb" value="12">12<sup>th</option><br>
+            </select><br><br>
+               <b> Location of your school</b><br><br>
+                <select name="location" id="ctry">
+                    <option value="Rwanda" selected>Rwanda</option>
+                    <option value="Rwanda">Canada</option>
+                    <option value="Rwanda">England</option>
+                    <option value="Rwanda">Germany</option>
+                    </select><br><br>
+                    <b>Fill in your recent marks</b><br><br>
+                    <input type="number" name="marks">
+                        
+    </fieldset>
+    <fieldset class="field">
+        <legend class="legend" font-size="30px"><b><i><u>Elegibility information</u></i></b></legend>
+        <b>how old will you be at the start of competition:</b><br>
+        <input type="number" name="nubr"><br><br>
+        <b> what languages do you speak:</b><br>
+        <input type="checkbox" name="lang" value="English">
+        <label for="eng">English</label><br> 
+        <input type="checkbox" name="lang" value="French">
+        <label for="fre">French</label><br>  
+        <input type="checkbox" name="lang" value="Kinyarwanda">
+        <label for="kiny">Kinyarwanda</label><br> 
+        <input type="checkbox" name="lang" value="Kiswahili">
+        <label for="kis">Kiswahili</label><br><br>
+        <b>What is your extracurricular activities</b><br>
+           <input list="extra" name="ex">
+           <datalist id="extra">
+            <option value="volleyball">
+            <option value="Basketball">
+            <option value="Netball"> 
+            <option value=" Beach Volleyball"> 
+           </datalist><br><br>
+       <b> what kind of project you have worked</b><br>
+        <input type="radio"   name="Projects"value="Soft projects">
+        <label for="soft">Soft projects</label><br>
+        <input type="radio"   name="Projects"value="Hard projects">
+        <label for="hard">Hard projects</label><br>
+       <b> Give the url of your projects(Optional)</b><br>
+       <input type="url" name="url"><br>
+        Click here if you are participating in person<br>
+        <input type="button" onclick="alert('Nyabihu district')" value="click here" >
+    </fieldset>
+    <fieldset class="field">
+        <legend ><b><i><u>During competition</u></i></b></legend>
+        Before the start of the competitions we will offer preparation courses and they will each week before december and its optional for both online and in person<br>
+        On which week will you be able to come<br>
+        <label for="week">Select a week when you will take them:</label>
+  <input type="week" id="week" name="week"><br><br>
+        <b> Can you rate your typing rate over 50. it is needed during competition :</b><br>
+        <input type="range" id="vol" name="vol" min="0" max="50"><br><br>
+        <b>choose the time you will start online competition:</b><br>
+        <input type="time" id="time" name="time"><br><br>
+        <b>Choose the country where you will be at time of competion if online:</b><br>
+        <select name="countries" id="ctry">
+            <option value="Rwanda" selected>Rwanda</option>
+            <option value="Canada">Canada</option>
+            <option value="England">England</option>
+            <option value="Germany">Germany</option>
+            </select><br><br>
+            </fieldset>
+            <fieldset class="field">
+                <legend><b><u>General questions</u></b></legend>
+                <b>Can you be able to describe your favorite color</b> choose it first <br>
+                <input type="color" name="color">
+            <b>describe it </b><br><br>
+            <textarea name="most" id="most" rows="10" hcols="30" width="250px" height="300px" placeholder="I love this color because of many" ></textarea><br><br>
+           <b> A student was given an assignement to use output element to help user to add numbers and he did this to facilitate user by using range while teacher told him its limitation of user.
+            Teacher told him using range limited the user.For you as user using this do you think its limitation.( First you use it).if yes  how do you think its limitation</b>
+            <input type="range" min="0" max="100" name="a" id="a">+
+            <input type="number" name="b" id="b" >=
+            <output name="x" for="a b" id="result"></output><br>
+            <textarea  name="details" id="most" rows="10" hcols="30" width="250px" height="300px" placeholder="This is limitation since user will limited to" ></textarea><br><br>
+        </fieldset>
+        <input type="submit" value="submit" name="submit">
+    </form>
+</body>
+</html>
